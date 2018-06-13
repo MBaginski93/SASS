@@ -1,0 +1,12 @@
+$colorPrimary: red;
+$colorSecondary: beige;
+$paddingSection: padding 15px;
+.menu {
+    color: $colorPrimary;
+}
+a {
+    color: $colorPrimary;
+}
+section {
+    padding: $paddingSection;
+}

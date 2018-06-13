@@ -1,0 +1,47 @@
+// zad 4 Partials
+@import "modules/_all.scss";
+@import "partials/_buttons.scss";
+@import "vendoors/_jquery.ui.scss";
+
+// zad 1
+$prime: indigo;
+$borderColor: aqua;
+$mainSize: 1000px;
+.main-width {
+    width: $mainSize;
+    li:first-child {
+        color: red;
+    }
+}
+.menu {
+    background-color: $prime;
+    li {
+        display: inline-block;
+        padding-left: 10px;
+    }
+}
+header {
+    border: 2px solid $borderColor;
+}
+
+// zad 2
+
+#zad2 {
+    li:first-child {
+        background-color: orange;
+    }
+    li:last-child {
+        background-color: green;
+    }
+    a {
+        &:hover {
+            color: red;
+        }
+    }
+}
+
+// zad 3
+
+footer .menu {
+
+}

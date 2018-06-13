@@ -1,0 +1,21 @@
+$test: 3;
+$color1: #FFCC00;
+$color2: #003399;
+$number1: 3;
+$number2: 5;
+@function zad1($a) {
+    $result: percentage($a);
+    @return $result;
+}
+@function zad2($a, $n) {
+    $result: mix($a, $n);
+    @return $result;
+}
+@function zad3($a, $n) {
+    $result: $a + $n;
+    @return result;
+}
+p {
+    font-size: zad1($test);
+    background-color: zad2($color1, $color2)
+}

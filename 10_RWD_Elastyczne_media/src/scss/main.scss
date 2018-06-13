@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* img {
+    width: 50%;
+    float: left;
+}
+.img {
+    position: relative;
+    height: 0;
+    max-width: 50%;
+    width: 100%;
+}
+.img::before {
+    padding-bottom: 56,25%;
+    content: '';
+    display: block;
+    background-image: url("../../images/rabbit.png") 0 0 / cover no-repeat;
+} */
+
+// zad 1
+.one-image {
+    border: 1px solid black;
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+// zad 2
+.one-image-bg {
+    height: 400px;
+    width: 800px;
+    border: 1px solid black;
+    background-image: url("../../images/rabbit.png");
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+}

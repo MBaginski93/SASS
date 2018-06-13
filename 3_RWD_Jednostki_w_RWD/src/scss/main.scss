@@ -1,0 +1,78 @@
+html {
+    background-color: #d4ac6e;
+}
+// zad 1
+.panel {
+    font-size: 40px;
+    p{
+        font-size: 0.5em;
+    }
+}
+// zad 2
+@function rem($size) {
+$remSize: $size / 16px;
+@return #{$remSize}rem;
+}
+.box {
+    font-size: 2em;
+    width: rem(60px)
+}
+// zad 3
+.container {
+    p{
+        font-size: rem(24px);
+    }
+}
+// zad 4
+.wolf_text {
+    width: rem(240px);
+    border: 1px solid indigo;
+}
+// zad 5
+.winnie_the_pooh {
+    font-size: 10px;
+    blockquote{
+        font-size: 300%;
+    }
+}
+// zad 6
+.images {
+    width: 80%;
+    border: 1px solid indigo;
+    margin: 0 auto;
+    height: 300px;
+    .img_one {
+        height: 100%;
+        width: 30%;
+        background-image: url("../images/cat.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+}
+// zad 7
+// Ta samą
+
+// zad 8
+.test_hight_grandpa {
+    height: 50px;
+    border: 2px solid black;
+    .test_height_daddy {
+        height: 200%;
+        border: 2px solid red;
+        .test_height_baby {
+            border: 2px solid blue;
+            height: 50%;
+        }
+    }
+}
+// zad 9
+// test_height_daddy ma taka sama wysokość jak rodzic
+
+// zad 10
+h1 {
+    position: absolute;
+    color: #77a8a8;
+    top: 50vh;
+    left: 50vw;
+    transform:translate(-50%, -50%);
+}

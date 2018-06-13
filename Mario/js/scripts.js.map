@@ -1,0 +1,1 @@
+{"version":3,"sources":["scripts.js"],"names":["document","addEventListener"],"mappings":"AAAAA,SAAAC,iBAAA,mBAAA","file":"scripts.js","sourcesContent":["document.addEventListener('DOMContentLoaded', function() {\r\n\r\n        //tutaj skrypty\r\n\r\n});\r\n\r\n"]}

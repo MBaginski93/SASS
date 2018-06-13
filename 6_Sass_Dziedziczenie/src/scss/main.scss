@@ -1,0 +1,30 @@
+%divSize {
+    width: 300px;
+    height: 80px;
+    margin: 15px;
+    padding: 10px;
+}
+%divSucc {
+    border: 1px solid darken(lightgreen, 40%);
+    background-color: lightgreen;
+}
+%divError {
+    border: 1px solid darken(pink, 40%);
+    background-color: pink;
+}
+%divInfo {
+    border: 1px solid darken(lightblue, 40%);
+    background-color: lightblue;
+}
+.success {
+    @extend %divSize ;
+    @extend %divSucc ;
+}
+.error {
+    @extend %divSize ;
+    @extend %divError ;
+}
+.info {
+    @extend %divSize ;
+    @extend %divInfo ;
+}

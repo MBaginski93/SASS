@@ -1,0 +1,96 @@
+section {
+    height: 100vh;
+    width: 100vw;
+    background-color: #EEE;
+    position: relative;
+    .container {
+        width: 600px;
+        height: 400px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #AAA;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//wpisz liczbe kolumn
+$columns: 6;
+$gap: 0;
+
+.row {
+    margin-bottom: $gap;
+
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    *[class*="col-"] {
+        float: left;
+        padding-left: $gap;
+        padding-right: $gap;
+    }
+
+    @for $i from 1 through $columns {
+        .col-#{$i}-#{$columns} {
+            width: (100% / $columns * $i);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .row{
+        *[class*="col-"] {
+            float: none;
+            margin-bottom: $gap;
+            width: 100%;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+.box1 {
+    height:400px;
+    background-color: #a96e5b
+}
+.box2 {
+    height:400px;
+    background-color: #587e76
+}
+.box3 {
+    height:400px;
+    background-color: #c1502e
+}
+.box4 {
+    height:400px;
+    background-color: #686256
+}
+.box5 {
+    height:400px;
+    background-color: #454140
+}
+.box6 {
+    height:400px;
+    background-color: #bd5734
+}

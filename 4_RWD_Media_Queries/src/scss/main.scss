@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: orange;
+    width: 100%;
+}
+@media (max-width: 400px){
+    body {
+        background-color: green;
+    }
+}
+@media (min-width: 401px) and (max-width: 800px){
+    body {
+        background-color: purple;
+    }
+}
+.content {
+    height: 400px;
+    width: 400px;
+    background-color: #588c7e;
+    margin: 10px;
+    float: left;
+}
+@media (max-width: 840px){
+    .content {
+        float: none;
+        width: calc(100% - 20px);
+    }
+}

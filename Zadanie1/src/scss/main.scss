@@ -1,0 +1,52 @@
+//variable
+@import "variables";
+
+//mixins
+@import "mixins";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    background: #E9E581;
+}
+img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.img-container {
+    position: relative;
+    &:hover {
+        .transition {
+            transition: 1s;
+            opacity: 1;
+        }
+    }
+    .transition {
+        text-align: center;
+        background-color: rgba(#000, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (min-width: 680px) {
+    section{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+}

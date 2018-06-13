@@ -1,0 +1,39 @@
+$font: 1rem;
+$line: 1.5rem;
+$color: #c1502e;
+
+@for $i from 1 through 4 {
+    h#{$i} {
+        $sizeF: $font(5-$i);
+        $sizeL: $line + 0.5rem;
+
+        font-size: $sizeF;
+        line-height: $sizeL;
+        color: lighten($color, $i*5);
+    }
+}
+// zad 1
+$timeOfDay: night;
+@mixin background($m) {
+    @if ($m == morning){
+        background-color: #fff2df;
+    }@else if ($m == midday){
+        background-color: #d9ad7c;
+    }@else if ($m == evening){
+        background-color: #a2836e;
+    }@else {
+        background-color: #674d3c;
+    }
+}
+body {
+    @include background($timeOfDay);
+}
+// zad 2
+div {
+    @for $i from 1 through 10 {
+    .block_#{$i} {
+        border: 1px solid whitesmoke;
+    }
+
+    }
+}

@@ -1,0 +1,3 @@
+.test-mixin{overflow:hidden;background-color:indigo}.test-mixin .left_box,.test-mixin .right_box{border:1px solid black;height:100px;width:200px;background-color:rgba(255,0,0,0.2);float:left}.test-mixin .right_box{float:right}header{border-top:1px solid #000;border-right:1px solid #333;border-left:2px dashed #000;border-bottom:0;border-radius:5px}
+
+/*# sourceMappingURL=main.css.map */

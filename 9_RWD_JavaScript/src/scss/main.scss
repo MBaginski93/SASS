@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.burger {
+    display: none;
+}
+.mobile-section {
+    font-size: 24px;
+    color: white;
+    ul{
+        background-color: indigo;
+    li {
+        display: inline-block;
+        padding: 10px;
+        border-right: 1px solid white;
+        a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+        }
+    }
+}
+@media (max-width: ) {
+    
+}
